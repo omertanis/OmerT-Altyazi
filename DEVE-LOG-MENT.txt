@@ -1,0 +1,46 @@
+﻿CHK OK-Rolleri yaptım. Sadece profilime girerken yönlendirme ve admin/profil user/profil
+		sayfası seçiminde işe yarıyor																			
+CHK OK-vtIslemleri diye ayrı sınıf oluşturdum ancak çoğu yerde inline query kullandım							
+CHK-OK- Bootstrap responsive																		
+
+CHK OK-kayıt-giriş çalışıyor. İlk giren kullanıcılar user rolüne sahip
+		adminler onları admin yapabiliyor. 
+		Buraya istenirse checkbox konabilir.
+
+CHK OK-dropdownlist ile altyazı ekleme yaptım
+		aynı isimde filmler eklenemez
+CHK OK-kullanıcı epostaları aynı olamaz.
+
+CHK OK-profilde update yaparken css kayıyor. Ona çözüm bulmalıyız.
+		 Ekran küçükse illa ki kayıyor.
+
+CHK OK-	arama işlemleri sayfaya özel session[ara] ile tutuluyor
+		mesela profilime gidip arama kutusundan ara yaparsanız o isme göre kullanıcı-altyazı-film arıyor
+		hepsi refresh yaparken seçilir.
+		Arama temizlemek için boş textbox ile ara tuşuna basılmalı
+		bunun için kullanıcı feedback verilebilir.
+
+CHK NO-troll yorumlar var. Silinebilir.
+
+CHK NO-Kodlar sıkıştırılabilir. Geliştirme aşamasında şuan.
+
+CHK OK-Result NO-Her gridview başka sayfalara çekilebilir. Ancak gerek yok
+
+CHK OK-index kullanıcı girişi session ile kontrol ediliyor. Refreshlerde roller aşılabiliyor
+CHK OK-admin/user profillerde de session kontrol ekledim fakat arama ile ilgili sorun çıkardığı için ekli
+
+CHK OK-kodlarda kopyala yapıştır çok var. Açıklamalar yetersiz olabilir.
+
+NO CHK-klasörlerde kullanılmayan öğeler çok fazla. Silinebilir
+
+
+
+Projedekiler
+Responsive tasarım
+ekleme silme güncelleme seçme hepsi var
+roller var sadece siteUser yada sideAdmine gönderiyor
+
+dosyayı kaydedip kaydettiği yerin adresini veritabanına atıyor
+indirirken sorun var ama çözemedim
+facebook yok
+bu kadar

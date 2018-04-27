@@ -1,0 +1,29 @@
+﻿.btn-transparent{
+   border-radius: 5px;
+   text-shadow: rgba(0,0,0,0.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   background-color: transparent;
+   border-width:1px; 
+   border-color:transparent;  
+   }
+.btn-transparent:hover {
+    border-color:lime;
+   color: #ffffff;
+   }
+.btn-transparent:active {
+    color:greenyellow;
+   }
+.main{
+	background:#3C4C55;
+    font: normal .80em arial, sans-serif;
+  background: #1C051F  url(../images/header.jpg) no-repeat;
+  color: #FFF;
+}
+
+.scroll
+{
+   overflow:auto;
+}

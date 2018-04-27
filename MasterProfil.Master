@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterProfil.Master.cs" Inherits="bootstrapWeb.MasterProfil" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="background: url(../images/header.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;">
+<head runat="server">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Tanımlamalar -->
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <link href="/dist/css/Normalize.css" rel="stylesheet" />
+    <link href="/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/dist/css/MyCss.css" rel="stylesheet" />
+</head>
+ <body>
+
+    <form runat="server" id="form1">
+        <!--NAVBAR -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <asp:Label ID="lbl_projeAdi" CssClass="navbar-brand" runat="server" Text="Ö<span style='color:greenyellow'>mer</span>T Altyazı"></asp:Label>
+                    <asp:Label ID="lbl_kullaniciadi" CssClass="navbar-brand" runat="server"></asp:Label> 
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <img src="../images/arrows.png" />
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" >
+                    <div class="navbar-form navbar-right">
+                        <div class="form-group">                   
+                            <asp:TextBox ID="txt_ara" CssClass="form-control navbar-btn navbar-inverse" style="background-color:rgba(0, 0, 0, 0.27);color:white"
+                                runat="server" placeholder="Arama..." ></asp:TextBox>
+                            <asp:Button ID="btn_ara" CssClass="form-control btn btn-transparent navbar-btn " 
+                                runat="server" Text="Ara" OnClick="btn_ara_Click"/>
+                            <asp:Button ID="btn_profilim" CssClass="form-control btn btn-transparent navbar-btn " 
+                                runat="server" Text="Ana Sayfaya Dön" OnClick="btn_profilim_Click"/><!-- isimlerini değiştirmedim methodların -->
+                            <asp:Button ID="btn_exit" CssClass="form-control btn btn-transparent navbar-btn " 
+                                runat="server" Text="Çıkış" OnClick="btn_exit_Click"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR ENDS -->
+        <!-- CONTAINER -->
+            <div class="container col-xs-11 col-xs-offset-1" >
+             <div>
+                 <h2>&nbsp</h2>
+             </div>
+             <div class="col-md-10" style="background-color:rgba(255, 255, 255, 0.95);border-radius:20px">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            </div>
+        <!-- CONTAINER ENDS -->
+     </form>
+     
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/dist/js/bootstrap.js"></script>
+</body>
+</html>
